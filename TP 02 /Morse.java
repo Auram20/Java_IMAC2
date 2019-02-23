@@ -15,6 +15,7 @@ public class Morse
 // peut modifier
 // Le + peut être remplacé par un append. 
 // Il faut lire : String newS=(new StringBuilder()).append("item").append(" Stop . ").toString(); 
+
 	  		// var newS="";
 			// for (String item : args) 
    			// {
@@ -23,14 +24,16 @@ public class Morse
 
    			// 	System.out.println(newS);
 
-// 03. 
+// 03. Avec un StringBuilder : L'avantage est que l'on peut utiliser la méthode append autant que l'on veux, sans faire de copie.
+
+			StringBuilder newS2= new StringBuilder();
 			for (String item : args) 
    			{
-  			     		
+  			     newS2.append(item).append(" Stop. ");		
 			}
+			System.out.println(newS2);
+
 
 	}
 }
-
-
 
