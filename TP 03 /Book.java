@@ -5,7 +5,6 @@
 // Pour (dé)commenter un bloc : Cmd+Shift+/ ou Ctrl + Shift + / 
 // ================================
 
-import java.util.*;
 
 public class Book   
 { 
