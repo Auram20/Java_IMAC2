@@ -1,7 +1,7 @@
 
 // ================================
 // POO JAVA - IMAC 2 - ANIK Myriam
-// TP 3 - Exo 01
+// TP 3 - Exo 01 à 03
 // Pour (dé)commenter un bloc : Cmd+Shift+/ ou Ctrl + Shift + / 
 // ================================
 
@@ -36,6 +36,14 @@ public class Main
         list.add(b1);
         System.out.println(list.indexOf(b2));
         System.out.println(list.indexOf(b3));
+
+
+        // ===========
+       // var aBook = new Book(null, null);
+       // var anotherBook = new Book(null, null);
+       // var list1 = new ArrayList();
+       // list1.add(aBook);
+       // System.out.println(list1.indexOf(anotherBook));
 
 
 	}

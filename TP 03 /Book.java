@@ -1,7 +1,7 @@
 
 // ================================
 // POO JAVA - IMAC 2 - ANIK Myriam
-// TP 3 - Exo 01
+// TP 3 - Exo 01 à 03
 // Pour (dé)commenter un bloc : Cmd+Shift+/ ou Ctrl + Shift + / 
 // ================================
 
@@ -97,5 +97,31 @@ public class Book
 	// Note: Recompile with -Xlint:unchecked for details.
 	// L'erreur vient du fait que l'on spécifie pas le type d'objets que l'on met dans le tableau.
 
+	// 05. La méthode equals 
+    // 06. 
+    // 07. 
+    // 08. Override permet de redefinir une méthode existante dans une autre classe 
+    @Override
+	public boolean equals(Object o) 
+	{
+		return (o instanceof Book &&
+				this.getTitle().equals(((Book) o).getTitle()) &&
+				this.getAuthor().equals(((Book) o).getAuthor()));
+		
+	}
+	// 09. NUllPointerException, à corrriger en utilisant un assert 
+
+
+	// ============ EXO 3 ====================
+
+	// 01-03. On peut utiliser un override là, le equals vient régler le soucis du null 
+	@Override
+	public String toString()
+	{
+		if (!author.equals("<no author>")) {
+			return "ERROR";
+		};
+		return title + " by " + author;
+	}
 }
 
