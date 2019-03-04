@@ -1,0 +1,19 @@
+
+// ================================
+// POO JAVA - IMAC 2 - ANIK Myriam
+// TP 4 - Exo 01 
+// Pour (dé)commenter un bloc : Cmd+Shift+/ ou Ctrl + Shift + / 
+// ================================
+
+
+// 1. sysout + Ctrl + Space dans un main : écrit `System.out.println()`.
+// 2. toStr + Ctrl + Space  : Override `toString` de la classe mère.
+// 3. get + Ctrl + Space, et set + Ctrl + Space: génére des getters et setters.
+// 4. Générer un constructeur initialisant le champ foo : Source --> Generate Getters and Setters.
+// 5. Refactor : Renomme une classe dans tout le projet.
+// 6. Alt + Shift + L : variable locale.
+// 7. Ctrl + 1 Quick-fix errors.
+// 8. Ctrl en déclarant la variable String : affiche le code déclarant la classe.
+// 9. Ctrl + Clic sur super.toString() : affiche le code déclarant la méthode.
+// 10. select foo + Ctrl + Shift + G : cherche les occurences de `foo` dans le projet.
+// 11. Ctrl + Shift + G : nettoie les expressions d'imports.
