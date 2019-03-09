@@ -13,8 +13,7 @@ public class Main
 
 	public static void main(String[] args) 
 	{
-
-    
+                
         var b1 = new Book("Da Java Code", "Duke Brown");
         var b2 = new Book("Le petit prince", "St. Ex");
         var monPanier = new ArrayShoppingCart(2); 
@@ -23,7 +22,15 @@ public class Main
         monPanier.displayList();
         monPanier.longestTitle();
 
-
+        var monPanierLibre = new FreeShoppingCart();
+        monPanierLibre.add(b1);
+        monPanierLibre.add(b2);
+        monPanierLibre.longestTitleIndex();
+        monPanierLibre.longestTitleIterator();
+        monPanierLibre.longestTitleForEach();
+   
+        // monPanierLibre.add(b2);  
+        // monPanierLibre.removeFirstOccurence(b2);
 
 	}
 }

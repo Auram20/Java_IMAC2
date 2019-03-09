@@ -59,7 +59,7 @@ public class ArrayShoppingCart
                 longest=liste[i].getTitle();
             }
         }
-        System.out.print("Le titre le plus long est : " + longest);
+        System.out.print("Le titre le plus long est : " + longest + "\n");
     }
 
 }
