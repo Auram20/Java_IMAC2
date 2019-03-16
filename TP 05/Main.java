@@ -32,7 +32,12 @@ public class Main
                 System.out.println("Le gagnant est le " + myArena.fight(LukeFighter,DataBot));                      
         
 
-
+                var john = new Fighter("John", 1);
+                var jane = new Fighter("Jane", 2);
+                System.out.println(myArena.fight(john, jane) + " wins !");
         }
 }
+
+// 2.9 Sous typage, on définit une classe fille plus spécifique 
+// Polymorphisme, on redefinit une methode (override) dans une classe pour qu'elle change de comportements (ex println)
 

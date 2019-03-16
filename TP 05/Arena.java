@@ -33,6 +33,12 @@ public class Arena
   			{
   			bot2.fire(bot1);
   			}
+        // else 
+        // {
+        //   try 
+        //   {
+        //   } catch (Exception e)
+        // }
   			
   		}
 

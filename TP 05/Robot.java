@@ -36,11 +36,12 @@ public class Robot
 		return (this.health==0) ? 1 : 0; 
 	} 
 
-  	public void fire(Robot bot2) 
+  	public void fire(Robot bot2)
+    // throws Exception 
   	{
   		// if ((bot2.isDead())==1)
   		// {
-  		// 	throw new Exception("Code de déantologie : tir sur les morts")
+  		//  	throw new Exception("Code de déantologie : tir sur les morts");
   		// }
   		if ((bot2.isDead())==0)
   		{
