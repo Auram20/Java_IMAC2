@@ -44,6 +44,8 @@ public class Fighter extends Robot
 	// Une meme graine, seed, donne toujours le même résultat.
 	// 2.3 Sinon on aurait acces directement aux attributs et ça mauvais bail --> Utiliser des getters et setters plutôt 
 
+	
+
 
 
 
