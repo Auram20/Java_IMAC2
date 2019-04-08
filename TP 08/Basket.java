@@ -10,8 +10,8 @@ public class Basket
 {
 
 // ================ ATTRIBUTS ================
-    private Apple[] _cart;
-    int _quantity; 
+    private Fruit[] _cart;
+    int _basketquantity; 
     double _price;
 
     static final int MAX_IN_CART = 200;
@@ -20,19 +20,35 @@ public class Basket
 // ================ CONSTRUCTEURS ================
     public Basket() 
     {
-        this._cart=new Apple[MAX_IN_CART];
+        this._cart=new Fruit[MAX_IN_CART];
         this._price=0;
         this._current=0;
     }
 
 // ================ METHODES ================
 
-public void add(Apple apple)
+public void add(Fruit fruit)
     {
         if (_current<MAX_IN_CART) 
         {
-          _cart[_current]=apple;
+          _cart[_current]=fruit;
           _current++;
+          _basketquantity+=fruit._quantity;
+        }
+        else 
+        {
+            System.out.print("Panier plein");
+        }
+
+    }
+
+public void add(Fruit fruit, int quantity)
+    {
+        if (_current<MAX_IN_CART) 
+        {
+          _cart[_current]=fruit;
+          _current++;
+          _basketquantity+=quantity;
         }
         else 
         {
@@ -52,7 +68,7 @@ public String toString()
         {
             Basket+= Ent + _cart[i].toString();
         }
-        
+        Basket+= Ent + "Le nombre d'articles dans le panier : " + _basketquantity;
         return Basket;
     }
 
