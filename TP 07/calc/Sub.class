@@ -1,0 +1,24 @@
+
+// ================================
+// POO JAVA - IMAC 2 - ANIK Myriam
+// TP 7
+// Pour (dé)commenter un bloc : Cmd+Shift+/ ou Ctrl + Shift + / 
+// ================================
+
+package calc;
+import java.util.*;
+
+final class Sub extends Operation {
+
+	public Sub(Expr left, Expr right) {
+		super(left, right);
+	}
+	
+	public int eval() {
+		return getLeft().eval() - getRight().eval();
+	}
+
+	public String getSymbol() {
+		return "-";
+	}
+}

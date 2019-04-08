@@ -37,8 +37,18 @@ public class Ring extends Circle
 
 // ================ METHODES ================
 	@Override
-	public String toString() {
-		return super.toString() + " ray interne :" + this.innerRay;
+	public String toString() 
+	{
+		return super.toString() + " InternalRadius:" + this.innerRay;
 	}
+
+	@Override
+	public boolean contains(Point p) 
+	{
+		Circle interne = new Circle(getCenter(), innerRay);
+		return super.contains(p) && !(interne.contains(p));
+	}
+
+	// 2.3 - On en conclut que l'héritage +++ 
 
 }
