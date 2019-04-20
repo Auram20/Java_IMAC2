@@ -7,6 +7,10 @@
 
 import java.util.Objects;
 
+
+// 1.1 Link est publique , attributs  privés /  méthodes publiques
+// 1.2 javac *.java && java Main
+
 public class Link
 {
 
@@ -45,7 +49,8 @@ public class Link
 
 
     @Override
-    public String toString() {
+    public String toString() 
+    {
         String str = this.value.toString() + " -> ";
         if (this.hasNext()) {
             return str + this.next.toString();
@@ -55,7 +60,8 @@ public class Link
         }
     }
 
-    public boolean contains(Object o) {
+    public boolean contains(Object o) 
+    {
         if (o.equals(this.value)) {
             return true;
         } else {
@@ -64,7 +70,7 @@ public class Link
             }
             return false;
         }
-}
+    }
 
 
 
